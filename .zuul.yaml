@@ -1,7 +1,15 @@
 - project:
     check:
       jobs:
+        - ansible-test-network-integration-eos-python27
+        - ansible-test-network-integration-eos-python35
+        - ansible-test-network-integration-eos-python36
+        - ansible-test-network-integration-eos-python37
         - ansible-tox-linters
     gate:
       jobs:
+        - ansible-test-network-integration-eos-python27
+        - ansible-test-network-integration-eos-python35
+        - ansible-test-network-integration-eos-python36
+        - ansible-test-network-integration-eos-python37
         - ansible-tox-linters
